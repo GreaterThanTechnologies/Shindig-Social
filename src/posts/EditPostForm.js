@@ -10,7 +10,7 @@ class EditPostForm extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {name: (this.props.post ? this.props.post.body : ""), id:  (this.props.post ? this.props.post.id : "")}
+    this.state = {body: (this.props.post ? this.props.post.body : ""), id:  (this.props.post ? this.props.post.id : "")}
   }
 
   componentDidUpdate(prevProps) {

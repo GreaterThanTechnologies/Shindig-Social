@@ -1,8 +1,8 @@
 import {useSelector, useDispatch} from 'react-redux'
-import EditPostForm from './EditPostForm'
-import deletePost from '../actions/deletePost'
-import PostForm from '../posts/PostForm'
-import Post from '../posts/Post'
+import EditListForm from './EditPostForm'
+import deleteList from '../actions/deletePost'
+import CommentForm from '../comments/CommentForm'
+import Comment from '../comments/Comment'
 
 
 export default function Post(props) {
@@ -11,23 +11,24 @@ export default function Post(props) {
   const post = posts.find(post => post.id === parseInt(props.match.params.id))
 
   const dispatch = useDispatch()
+  console.log(posts, post)
 
   const handleDelete = () => {
-    dispatch(deletePost(post.id))
+    dispatch(deleteList(post.id))
     props.history.push("/posts")
   }
 
   return (
-        <div className="post">
+        <>
           <h1>
-              {post && post.body}
+              {post && post.name}
           </h1>
-          <button className="post___button" onClick={handleDelete}>Delete Post</button>
-            <h3>Edit Post</h3><EditPostForm list={list}/>
-            <h3>Add Comment</h3><PostForm list={list}/>
+          <button onClick={handleDelete}>Delete List</button>
+            <h3>Edit Post</h3><EditListForm post={post}/>
+            <h3>Add Comment</h3><CommentForm post={post}/>
             <h3>All Comments</h3>
-            {post && post.comments.map(todo => <Post key={comment.id} post={comment}/>)}
-          </div>
+            {post && post.comments.map(comment => <Post key={comment.id} post={comment}/>)}
+          </>
         )
 }
 

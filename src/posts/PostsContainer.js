@@ -17,9 +17,9 @@ class PostsContainer extends Component {
           <div className="posts___cdm">
             <Switch>
               <Route path="/posts/new">
-                <NewPostForm className="newPost___form/>
+                <NewPostForm className="newPost___form" />
                 </Route>
-              <Route exact path="/posts">
+                <Route exact path="/posts">
                 <Posts />
                 </Route>
               <Route path='/posts/:id' render={(routerProps) => <Post {...routerProps}/>}/>

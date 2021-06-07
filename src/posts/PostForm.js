@@ -8,7 +8,7 @@ class PostForm extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {name: (this.props.post ? this.props.post.body : ""), id:  (this.props.post ? this.props.post.id : "")}
+    this.state = {body: (this.props.post ? this.props.post.body : ""), id:  (this.props.post ? this.props.post.id : "")}
 
   }
 
@@ -24,7 +24,7 @@ class PostForm extends React.Component {
         this.props.editPost(this.state)
 
     } else {
-      const post = {name: this.state.body, id: Math.floor(Math.random() * Math.floor(100000000))}
+      const post = {body: this.state.body, id: Math.floor(Math.random() * Math.floor(100000000))}
       this.props.addPost(post)
       this.props.history.push("/posts")
     }

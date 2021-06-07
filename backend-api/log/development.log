@@ -25,3 +25,851 @@ FOREIGN KEY ("post_id")
   [1m[36mTRANSACTION (18.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/posts" for ::1 at 2021-06-07 15:43:44 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.0ms | Allocations: 5309)
+
+
+  
+ArgumentError (Unknown validator: 'PrecenseValidator'):
+  
+app/models/post.rb:5:in `<class:Post>'
+app/models/post.rb:1:in `<main>'
+app/controllers/posts_controller.rb:4:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/posts" for ::1 at 2021-06-07 15:49:41 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 3794)
+
+
+  
+ArgumentError (Unknown validator: 'PrecenseValidator'):
+  
+app/models/post.rb:5:in `<class:Post>'
+app/models/post.rb:1:in `<main>'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 15:53:30 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 715)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 15:54:14 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 606)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 15:54:17 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 606)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 15:59:32 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 588)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 15:59:33 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 588)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 15:59:38 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 588)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 15:59:41 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 588)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 15:59:48 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/posts" for ::1 at 2021-06-07 16:01:49 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 584)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-06-07 16:01:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColimnToPosts (20210607200601)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "posts" ADD "body" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210607200601"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at", "body") VALUES (?, ?, ?)[0m  [["created_at", "2021-06-07 20:14:40.521454"], ["updated_at", "2021-06-07 20:14:40.521454"], ["body", "Look at what I am doing here!"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at", "body") VALUES (?, ?, ?)[0m  [["created_at", "2021-06-07 20:14:40.526507"], ["updated_at", "2021-06-07 20:14:40.526507"], ["body", "Something seems pretty cool!"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at", "body") VALUES (?, ?, ?)[0m  [["created_at", "2021-06-07 20:14:40.530678"], ["updated_at", "2021-06-07 20:14:40.530678"], ["body", "Wait till the .css is done!"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Looks neat! Keep going!"], ["post_id", 1], ["created_at", "2021-06-07 20:14:40.589044"], ["updated_at", "2021-06-07 20:14:40.589044"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Something? Everything!"], ["post_id", 2], ["created_at", "2021-06-07 20:14:40.595348"], ["updated_at", "2021-06-07 20:14:40.595348"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "I can not wait! I love doing CSS"], ["post_id", 3], ["created_at", "2021-06-07 20:14:40.600913"], ["updated_at", "2021-06-07 20:14:40.600913"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "I love it!"], ["post_id", 1], ["created_at", "2021-06-07 20:14:40.606349"], ["updated_at", "2021-06-07 20:14:40.606349"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "For sure brother!"], ["post_id", 2], ["created_at", "2021-06-07 20:14:40.612190"], ["updated_at", "2021-06-07 20:14:40.612190"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "It is going to look amazing!"], ["post_id", 3], ["created_at", "2021-06-07 20:14:40.617826"], ["updated_at", "2021-06-07 20:14:40.617826"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts" for ::1 at 2021-06-07 16:14:50 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 35ms (Views: 29.8ms | ActiveRecord: 2.7ms | Allocations: 14216)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 16:16:42 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 3ms (Allocations: 218)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:23:43 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 7ms (Allocations: 1577)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:32:22 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 7ms (Allocations: 1578)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:35:19 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 1577)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:40:52 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 171ms (Allocations: 1577)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:43:35 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 9ms (Allocations: 1577)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:44:27 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 1578)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:45:34 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 1577)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:53:34 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 1577)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:58:06 -0400
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 370ms (ActiveRecord: 0.0ms | Allocations: 2382)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 16:59:51 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1581)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 17:00:50 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1580)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 17:02:22 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 1581)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 17:03:11 -0400
+Processing by PostsController#index as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1577)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 17:08:45 -0400
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 7ms (Allocations: 1576)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 17:08:46 -0400
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 193)
+
+
+  
+SyntaxError (/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+endSyntaxError: /Users/jameshyatt/Desktop/De...
+              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: unknown regexp options - jahyatt
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting end
+...indig-social/src/posts/Post.js: Identifier 'Post' has alread...
+...                              ^
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+.../Post.js: Identifier 'Post' has already been declared. (8:24)
+...                            ^~~
+/Users/jameshyatt/Desktop/Development/code/shindig-social/backend-api/app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+... has already been declared. (8:24)
+...                              ^):
+  
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: unknown regexp options - jahyatt
+app/models/post.rb:5: syntax error, unexpected ':', expecting end
+app/models/post.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/post.rb:5: syntax error, unexpected ':', expecting ')'
+app/controllers/posts_controller.rb:4:in `index'
+Started GET "/posts" for ::1 at 2021-06-07 17:09:39 -0400
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 467ms (Views: 282.8ms | ActiveRecord: 2.5ms | Allocations: 14069)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 17:09:44 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.5ms | Allocations: 3328)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 17:09:49 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 3316)
+
+
+Started POST "/posts" for ::1 at 2021-06-07 17:10:13 -0400
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"name"=>"", "undefined"=>"afddfd"}}
+[31mUnpermitted parameters: :name, :undefined[0m
+Completed 200 OK in 607ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4476)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 17:14:21 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms | Allocations: 3332)
+
+
+Started POST "/posts" for ::1 at 2021-06-07 17:14:28 -0400
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"name"=>"", "undefined"=>"sasdadsa"}}
+[31mUnpermitted parameters: :name, :undefined[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 711)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 17:15:21 -0400
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 3316)
+
+
+Started POST "/posts" for ::1 at 2021-06-07 17:15:28 -0400
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"body"=>"", "undefined"=>"a"}}
+[31mUnpermitted parameter: :undefined[0m
+Completed 200 OK in 11ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 740)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColimnToPosts (20210607200601)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "body" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aposts" ("id","created_at","updated_at","body")
+                     SELECT "id","created_at","updated_at","body" FROM "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "posts" ("id","created_at","updated_at")
+                     SELECT "id","created_at","updated_at" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210607200601"]]
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20210607190031)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210607190031"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20210607185328)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210607185328"]]
+  [1m[36mTRANSACTION (52.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20210607185328)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210607185328"]]
+  [1m[36mTRANSACTION (51.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20210607190031)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "post_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210607190031"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddColumnToPosts (20210607200601)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "body" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210607200601"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/posts" for ::1 at 2021-06-07 17:20:02 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1526)
+
+
+Started POST "/posts" for ::1 at 2021-06-07 17:20:10 -0400
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"body"=>"", "undefined"=>"a"}}
+[31mUnpermitted parameter: :undefined[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 3095)
+
+
+Started GET "/posts" for ::1 at 2021-06-07 17:23:53 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 4406)
+
+

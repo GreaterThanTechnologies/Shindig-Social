@@ -11,21 +11,19 @@ class Posts extends Component {
 
 
   render() {
-      console.log("render")
-      return (
+    return (
 
-        <div className="posts___ulDiv">
-          <ul className="posts___ul">
-            {this.props.posts && this.props.posts.map((post, i) => <li key={post.id}><Link to={`/posts/${post.id}`} >{post.body}</Link></li> )}
-          </ul>
-        </div>
-      )
-  }
+      <div>
+        <ul>
+          {this.props.posts && this.props.posts.map((post, i) => <li key={post.id}><Link to={`/posts/${post.id}`} >{post.name}</Link></li> )}
+        </ul>
+      </div>
+    )
+}
 
 }
 
 function mapStateToProps(state) {
-  console.log("mapStateToProps")
   return {posts: state.posts}
 }
 

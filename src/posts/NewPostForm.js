@@ -10,7 +10,7 @@ class NewPostForm extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {name:  ""}
+    this.state = {body:  ""}
   }
 
   handleSubmit(post) {
