@@ -1,0 +1,20 @@
+export default function postsReducer(state = {posts: []}, action) {
+     switch (action.type) {
+      case "ADD_POST":
+        return {posts: [...state.posts, action.payload]}
+      case "DELETE_POST":
+        return {posts: state.posts.filter(post => post.id !== action.payload)}
+      case "EDIT_POST":
+        const editedPostsArray = state.posts.map(post => post.id === action.payload.id ? action.payload : post)
+        return {posts: editedPostsArray}
+      case "FETCH_POSTS":
+        return {posts: action.payload}
+      case "ADD_BODY":
+        const updatedPost = state.posts.find(post => post.id === action.payload.postId)  
+        updatedPost.comments = [...updatedPost.comments, action.payload]  
+        return {comments: state.posts.map(post => post.id === updatedPost.id ? updatedPost : post)}  
+      default:
+        return state
+  }
+}
+
