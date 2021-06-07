@@ -1,11 +1,18 @@
-import './App.css';
+import ListsContainer from './lists/ListsContainer'
+import SideBar from './SideBar'
 
-function App() {
+
+function App(){
   return (
-    <div className="App">
-     
-    </div>
-  );
+        <div className="app">
+          <SideBar />
+          <PostsContainer />
+        </div>
+      )
 }
 
-export default App;
+
+
+
+
+export default App

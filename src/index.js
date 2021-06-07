@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router} from 'react-router-dom'
+import {createStore, combineReducers, compose, applyMiddleware} from 'redux'
+import postsReducer from './reducers/postsReducer'
+import {composeWithDevTools} from 'redux-devtools-extension'
+import {Provider} from 'react-redux'
+import thunk from 'redux-thunk'
 
+
+const initialState = {posts: []}
+
+
+
+const store = createStore(postsReducer, initialState, compose(applyMiddleware(thunk), composeWithDevTools()))
+
+console.log(store)
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router >
+    <Provider store={store}>
+        <App/>
+    </Provider>
+  </Router>
+  ,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
