@@ -16,7 +16,7 @@ class Posts extends Component {
 
         <div className="posts___ulDiv">
           <ul className="posts___ul">
-            {this.props.posts && this.props.posts.map((post, i) => <li key={post.id}><Link to={`/posts/${post.id}`} >{post.name}</Link></li> )}
+            {this.props.posts && this.props.posts.map((post, i) => <li key={post.id}><Link to={`/posts/${post.id}`} >{post.body}</Link></li> )}
           </ul>
         </div>
       )

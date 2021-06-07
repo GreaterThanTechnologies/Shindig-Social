@@ -8,7 +8,7 @@ class PostForm extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {name: (this.props.post ? this.props.post.name : ""), id:  (this.props.post ? this.props.post.id : "")}
+    this.state = {name: (this.props.post ? this.props.post.body : ""), id:  (this.props.post ? this.props.post.id : "")}
 
   }
 
@@ -24,7 +24,7 @@ class PostForm extends React.Component {
         this.props.editPost(this.state)
 
     } else {
-      const post = {name: this.state.name, id: Math.floor(Math.random() * Math.floor(100000000))}
+      const post = {name: this.state.body, id: Math.floor(Math.random() * Math.floor(100000000))}
       this.props.addPost(post)
       this.props.history.push("/posts")
     }
@@ -32,14 +32,14 @@ class PostForm extends React.Component {
 
   }
 
-  handleChange = (e) => {this.setState({[e.target.name]: e.target.value})}
+  handleChange = (e) => {this.setState({[e.target.body]: e.target.value})}
 
 
   render = () => {
 
     return (
       <form className="post___form" onSubmit={this.handleSubmit.bind(this)}>
-        <input type="text" onChange={this.handleChange} value={this.state.name} name="name"/>
+        <input type="text" onChange={this.handleChange} value={this.state.body} name="name"/>
 
         <input className="postForm___submit" type="submit"/>
       </form>

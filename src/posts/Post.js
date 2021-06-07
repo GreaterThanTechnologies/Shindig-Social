@@ -20,7 +20,7 @@ export default function Post(props) {
   return (
         <div className="post">
           <h1>
-              {post && post.name}
+              {post && post.body}
           </h1>
           <button className="post___button" onClick={handleDelete}>Delete Post</button>
             <h3>Edit Post</h3><EditPostForm list={list}/>
