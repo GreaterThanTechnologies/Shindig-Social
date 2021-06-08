@@ -25,6 +25,8 @@
 
 .sidebarOption > .MuiSvgIcon-root {
   padding: 10px;
+  color: var(--shindig-color);
+
 }
 
 .sidebarOption--active {

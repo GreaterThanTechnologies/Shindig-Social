@@ -24,10 +24,10 @@ class CommentForm extends React.Component {
   render() {
 
     return (
-      <form className="comment___form" onSubmit={this.handleSubmit.bind(this)}>
-        <input className="commentForm___input" type="text" onChange={this.handleChange.bind(this)} value={this.state.content} name="content"/>
+      <form className="comment__form" onSubmit={this.handleSubmit.bind(this)}>
+        <input className="commentForm__input" type="text" onChange={this.handleChange.bind(this)} value={this.state.content} name="content"/>
 
-        <input className="commentForm___submit" type="submit"/>
+        <input className="commentForm__submit" type="submit"/>
       </form>
   )
   }

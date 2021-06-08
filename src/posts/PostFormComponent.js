@@ -18,7 +18,7 @@ class PostFormComponent extends React.Component {
       <form onSubmit={this.handleSubmit.bind(this)}>
         <input type="text" onChange={this.handleChange} value={this.props.post && this.props.post.body} name="name"/>
 
-        <input type="submit"/>
+        <input type="submit" />
       </form>
   )
   }

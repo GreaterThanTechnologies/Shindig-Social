@@ -12,22 +12,23 @@ export default function Post(props) {
 
   const dispatch = useDispatch()
 
-  const handleDelete = () => {
+  const handleDelete = () => { 
     dispatch(deletePost(post.id))
     props.history.push("/posts")
   }
 
   return (
-        <>
+        <div className="post">
+          
           <h1>
-              {post && post.body}
+            {post && post.body}
           </h1>
-          <button onClick={handleDelete}>Delete List</button>
-            <h3>Edit Post</h3><EditPostForm post={post}/>
-            <h3>Add Comment</h3><CommentForm post={post}/>
-            <h3>All Comments</h3>
-            {post && post.comments.map(comment => <Post key={comment.id} body={comment}/>)}
-          </>
+          <button onClick={handleDelete}>Delete Post</button>
+          <h3>Edit Post</h3><EditPostForm post={post}/>
+          <h3>Add Comment</h3><CommentForm post={post}/>
+          <h3>All Comments</h3>
+          {post && post.comments.map(comment => <Post key={comment.id} body={comment}/>)}
+        </div>
         )
 }
 

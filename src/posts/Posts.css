@@ -1,0 +1,27 @@
+.posts {
+  flex: 0.8;
+  min-width: 800px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.posts__header > h2 {
+  font-weight: 500;
+  font-size: 35px !important;
+  margin-left: 15px !important;
+  color: var(--shindig-color);
+  border-bottom: 1px solid var(--shindig-background);
+  
+
+}
+
+.posts__body {
+  font-size: 20px;
+  color: var(--shindig-background);
+
+}
+
+.posts__body > li {
+  color: var(--shindig-background);
+}

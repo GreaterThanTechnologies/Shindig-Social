@@ -14,10 +14,10 @@ class PostsContainer extends Component {
 
     render() {
         return (
-          <div className="posts___cdm">
+          <div className="posts__cdm">
             <Switch>
               <Route path="/posts/new">
-                <NewPostForm className="newPost___form" />
+                <NewPostForm className="newPost__form" />
               </Route>
               <Route exact path="/posts">
                 <Posts />

@@ -38,12 +38,14 @@ class PostForm extends React.Component {
   render = () => {
 
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
-        <input type="text" onChange={this.handleChange} value={this.state.body} name="body"/>
-
-        <input type="submit"/>
-      </form>
-  )
+      <div className="post__form">
+        <form onSubmit={this.handleSubmit.bind(this)}>
+          <input type="text" onChange={this.handleChange} value={this.state.body} name="body"/>
+      
+          <input className="postForm__inputSubmit" type="submit"/>
+        </form>
+      </div>
+  ) 
   }
 
 }

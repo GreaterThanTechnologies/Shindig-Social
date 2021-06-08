@@ -1,5 +1,6 @@
 export default function postsReducer(state = {posts: []}, action) {
-     switch (action.type) {
+
+  switch (action.type) {
       case "ADD_POST":
         return {posts: [...state.posts, action.payload]}
       case "DELETE_POST":
@@ -10,11 +11,12 @@ export default function postsReducer(state = {posts: []}, action) {
       case "FETCH_POSTS":
         return {posts: action.payload}
       case "ADD_BODY":
-        const updatedPost = state.posts.find(post => post.id === action.payload.postId)  
-        updatedPost.comments = [...updatedPost.comments, action.payload]  
-        return {comments: state.posts.map(post => post.id === updatedPost.id ? updatedPost : post)}  
+        const updatedPost = state.posts.find(post => post.id === action.payload.postId) // first find list that todo is associated with
+        updatedPost.comments = [...updatedPost.comments, action.payload] // replace todos property on the list
+        return {posts: state.posts.map(post => post.id === updatedPost.id ? updatedPost : post)} //return new state with update list todos
       default:
         return state
   }
 }
+
 
