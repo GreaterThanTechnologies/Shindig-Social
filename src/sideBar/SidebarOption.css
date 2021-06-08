@@ -1,0 +1,49 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* .sidebar__links > Link {
+  text-decoration: none !important;  
+
+} */
+
+.sidebarOption:hover {
+  background-color: #e8f5fe;
+  border-radius: 30px;
+  color: var(--shindig-color);
+  transition: color 150ms ease-out; 
+ 
+}
+
+.sidebarOption:hover > h2 {
+  font-size: 18px;
+  font-weight: 800;
+  
+}
+
+.sidebarOption > .MuiSvgIcon-root {
+  padding: 10px;
+}
+
+.sidebarOption--active {
+  color: var(--shindig-color);
+  /* border-bottom: 2px solid var(--shindig-color); */
+ 
+}
+
+.sidebarOption > h2 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 15px;
+  text-decoration: none !important; 
+  border: none; 
+  color: var(--shindig-color);
+
+}
+
+.sidebarOption--active > h2 {
+  font-weight: 800;
+  font-size: 20px;
+}
