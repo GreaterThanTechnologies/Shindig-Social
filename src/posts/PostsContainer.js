@@ -18,11 +18,11 @@ class PostsContainer extends Component {
             <Switch>
               <Route path="/posts/new">
                 <NewPostForm className="newPost___form" />
-                </Route>
-                <Route exact path="/posts">
+              </Route>
+              <Route exact path="/posts">
                 <Posts />
-                </Route>
-              <Route path='/posts/:id' render={(routerProps) => <Post {...routerProps}/>}/>
+              </Route>
+              <Route path='/posts/:id' render={(props) => <Post {...props}/>}/>
             </Switch>
           </div>
         )

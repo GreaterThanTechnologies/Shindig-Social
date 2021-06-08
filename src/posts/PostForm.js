@@ -12,8 +12,8 @@ class PostForm extends React.Component {
 
   }
 
-  componentDidUpdate(prevProps) {  
-      if (prevProps.post === undefined) {
+  componentDidUpdate(prevProps) { 
+    if (prevProps.post === undefined) {
       this.setState({...this.props.post})
     }
   }
@@ -21,11 +21,11 @@ class PostForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     if (this.props.post) {
-        this.props.editPost(this.state)
+        this.props.editPosts(this.state)
 
     } else {
       const post = {body: this.state.body, id: Math.floor(Math.random() * Math.floor(100000000))}
-      this.props.addPost(post)
+      this.props.addPost(post) 
       this.props.history.push("/posts")
     }
 
@@ -38,10 +38,10 @@ class PostForm extends React.Component {
   render = () => {
 
     return (
-      <form className="post___form" onSubmit={this.handleSubmit.bind(this)}>
-        <input type="text" onChange={this.handleChange} value={this.state.body} name="name"/>
+      <form onSubmit={this.handleSubmit.bind(this)}>
+        <input type="text" onChange={this.handleChange} value={this.state.body} name="body"/>
 
-        <input className="postForm___submit" type="submit"/>
+        <input type="submit"/>
       </form>
   )
   }
@@ -49,4 +49,3 @@ class PostForm extends React.Component {
 }
 
 export default withRouter(connect(null, {addPost: addPost, editPost: editPost})(PostForm))
-

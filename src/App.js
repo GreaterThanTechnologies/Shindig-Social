@@ -1,6 +1,6 @@
 import PostsContainer from './posts/PostsContainer'
-import SideBar from './SideBar'
-
+import SideBar from './sideBar/SideBar'
+import "./App.css"
 
 function App(){
   return (
@@ -8,6 +8,7 @@ function App(){
         <div className="app">
           <SideBar />
           <PostsContainer />
+          {/* <Comment /> */}
         </div>
       )
 }

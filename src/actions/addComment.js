@@ -1,7 +1,7 @@
 export default function addBody(body) {
 
   return function(dispatch) {
-    fetch("http://localhost:3001/comments", {
+    fetch("http://localhost:3010/comments", {
       method: "POST",
       headers: {Accept: "application/json", "Content-Type": "application/json"},
       body: JSON.stringify({comment: body})

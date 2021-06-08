@@ -1,3 +1,6 @@
+Post.delete_all
+Comment.delete_all
+
 Post.create(body: "Look at what I am doing here!")
 Post.create(body: "Something seems pretty cool!")
 Post.create(body: "Wait till the .css is done!")
