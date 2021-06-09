@@ -11,13 +11,13 @@ class CommentForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault()
-    const comment = {...this.state, comment_id: this.props.comment.id}
+    const comment = {...this.state, post_id: this.props.post.id}
     this.props.addComment(comment)
     this.setState({content: ""})
   }
 
   handleChange(e) {
-      this.setState({[e.target.content]: e.target.value})
+      this.setState({[e.target.body]: e.target.value})
   }
 
 

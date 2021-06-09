@@ -1,4 +1,5 @@
 import React from 'react'
+import "./PostFormComponent.css"
 
 
 
@@ -10,15 +11,28 @@ class PostFormComponent extends React.Component {
     this.props.submitCallback(this.props.post)
   }
 
-  handleChange = (e) => {this.props.updateStateInParent({[e.target.name]: e.target.value})}
+  handleChange = (e) => {this.props.updateStateInParent({[e.target.body]: e.target.value})}
 
   render = () => {
 
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
-        <input type="text" onChange={this.handleChange} value={this.props.post && this.props.post.body} name="name"/>
+      <form 
+        className="postForm__component" 
+        onSubmit={this.handleSubmit.bind(this)}>
 
-        <input type="submit" />
+        <input 
+          className="postForm__input"
+          type="text" 
+          onChange={this.handleChange} 
+          value={this.props.post && this.props.post.body} 
+          name="body"
+          placeholder="what's happening...?"
+        />
+
+        <input
+          className="postForm__submit"
+          type="submit" 
+        />
       </form>
   )
   }

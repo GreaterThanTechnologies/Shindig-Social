@@ -1,0 +1,43 @@
+.postForm__component {
+  padding-top: 20px;
+  border-bottom: 1px solid var(--shindig-background);
+  flex: 0.8;
+  /* min-width: 800px; */
+  display: flex;
+  align-items: center;
+}
+
+.postForm__component > input {
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  outline-color: var(--shindig-color);
+  margin-bottom: 10px;
+  
+}
+
+.postForm__submit {
+  cursor: pointer;
+  background-color: var(--shindig-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  width: 150px !important;
+  height: 35px !important;
+  margin-left: auto !important;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+  justify-content: right;
+}
+
+.postForm__input {
+  display: flex;
+  margin-right: 400px;
+}
+
+.postForm__input > input:focus {
+  flex: 1;
+  margin-right: 300px;
+}
+
