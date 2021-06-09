@@ -1,0 +1,30 @@
+.editPost__button {
+  cursor: pointer;
+  background-color: var(--shindig-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  width: 150px !important;
+  height: 35px !important;
+  margin-left: auto !important;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+  justify-content: right;
+  margin-bottom: 15px;
+  font-size: 20px !important;
+
+}
+
+.posts__cdm > h3 {
+  color: var(--shindig-color);
+  font-size: 18px;
+  margin-top: 45px;
+  
+}
+
+.editPost__box {
+  border-bottom: 1px solid var(--shindig-background);
+}
+
+

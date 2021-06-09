@@ -20,7 +20,8 @@ class Posts extends Component {
           </div>
           <div className="posts__body" >
             <ul>
-              {this.props.posts && this.props.posts.map((post, i) => <li key={post.id}><Link to={`/posts/${post.id}`} style={{textDecoration:"none"}}>{post.body}</Link></li> )}
+              {this.props.posts && this.props.posts.map((post, i) => <li className="postBody__li" 
+              key={post.id}><Link to={`/posts/${post.id}`} style={{textDecoration:"none"}}>{post.body}</Link></li> )}
             </ul>
           </div>
         </div>

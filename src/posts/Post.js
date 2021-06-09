@@ -3,9 +3,10 @@ import EditPostForm from './EditPostForm'
 import deletePost from '../actions/deletePost'
 import CommentForm from '../comments/CommentForm'
 import Comment from '../comments/Comment'
+import "./Post.css"
 
 
-export default function List(props) {
+export default function Post(props) {
 
   const posts = useSelector(function(state) {return state.posts})
   const post = posts.find(post => post.id === parseInt(props.match.params.id))
@@ -23,11 +24,17 @@ export default function List(props) {
           <h1>
               {post && post.name}
           </h1>
-          <button onClick={handleDelete}>Delete List</button>
-            <h3>Edit Post</h3><EditPostForm post={post}/>
-            <h3>Add Comment</h3><CommentForm post={post}/>
-            <h3>All Comments</h3>
-            {post && post.comments.map(comment => <Comment key={comment.id} body={comment}/>)}
-          </>
+          <div className="editPost__box">
+            <button 
+              className="editPost__button"
+              onClick={handleDelete}>
+              Delete List
+            </button>
+          </div>
+              <h3>Edit Post</h3><EditPostForm post={post}/>
+              <h3>Add Comment</h3><CommentForm post={post}/>
+              <h3>All Comments</h3>
+              {post && post.comments.map(comment => <Comment key={comment.id} body={comment}/>)}
+        </>
         )
 }

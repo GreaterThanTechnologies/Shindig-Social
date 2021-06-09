@@ -1,21 +1,21 @@
-.postForm__component {
+.comment__form {
   padding-top: 20px;
   border-bottom: 1px solid var(--shindig-background);
-  /* flex: 0.8; */
+  flex: 0.8;
   display: flex;
   align-items: center;
+  padding-bottom: 15px;
 }
 
-.postForm__component > input {
+.commentForm__input {
   border: none;
   cursor: pointer;
   font-size: 18px;
   outline-color: var(--shindig-color);
   margin-bottom: 15px;
-  
 }
 
-.postForm__submit {
+.commentForm__submit {
   cursor: pointer;
   background-color: var(--shindig-color) !important;
   border: none !important;
@@ -26,19 +26,7 @@
   width: 150px !important;
   height: 35px !important;
   margin-left: auto !important;
-  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
-  justify-content: right;
-  margin-bottom: 15px;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75) !important;
+  justify-content: right !important;
   font-size: 20px !important;
 }
-
-.postForm__input {
-  display: flex;
-  margin-right: 400px;
-}
-
-.postForm__input > input {
-  flex: 1;
-  margin-right: 300px;
-}
-

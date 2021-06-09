@@ -1,12 +1,12 @@
-export default function addBody(body) {
+export default function addComment(content) {
 
   return function(dispatch) {
     fetch("http://localhost:3010/comments", {
       method: "POST",
       headers: {Accept: "application/json", "Content-Type": "application/json"},
-      body: JSON.stringify({comment: body})
+      body: JSON.stringify({comment: content})
     }).then(resp => resp.json())
-    .then(body => dispatch({type: "ADD_BODY", payload: body}))
+    .then(content => dispatch({type: "ADD_CONTENT", payload: content}))
 
   }
 }
