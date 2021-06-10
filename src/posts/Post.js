@@ -22,7 +22,7 @@ export default function Post(props) {
   return (
         <>
           <h1>
-              {post && post.name}
+              {post && post.body}
           </h1>
           <div className="editPost__box">
             <button 
