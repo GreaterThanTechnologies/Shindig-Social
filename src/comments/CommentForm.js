@@ -7,7 +7,9 @@ class CommentForm extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {content: ""}
+    this.state = [{
+      content: ""}
+    ]
   }
 
   handleSubmit(e) {
@@ -18,7 +20,9 @@ class CommentForm extends React.Component {
   }
 
   handleChange = (e) => {
-      this.setState({[e.target.name]: e.target.value})
+      this.setState({[e.target.name]: e.target.value, 
+        className: "active"
+      })
   }
 
 

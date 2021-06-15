@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react'
-import Post from './Post'
-import PostForm from './PostForm'
-import {Redirect} from 'react-router-dom'
+// import Post from './Post'
+// import PostForm from './PostForm'
+// import {Redirect} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import "./Posts.css"

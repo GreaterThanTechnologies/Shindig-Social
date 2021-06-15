@@ -12,7 +12,9 @@
   cursor: pointer;
   font-size: 18px;
   outline-color: var(--shindig-color);
-  margin-bottom: 15px;
+  width: auto;
+  flex: 1;
+  color: gray;
 }
 
 .commentForm__submit {
@@ -30,3 +32,4 @@
   justify-content: right !important;
   font-size: 20px !important;
 }
+

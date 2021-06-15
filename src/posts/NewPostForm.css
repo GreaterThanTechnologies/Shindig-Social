@@ -1,7 +1,6 @@
 .postForm__component {
   padding-top: 20px;
   border-bottom: 1px solid var(--shindig-background);
-  /* flex: 0.8; */
   display: flex;
   align-items: center;
 }
@@ -34,11 +33,13 @@
 
 .postForm__input {
   display: flex;
-  margin-right: 400px;
+  width: auto;
+  flex: 1;
+  color: gray;
 }
 
 .postForm__input > input {
   flex: 1;
-  margin-right: 300px;
+  width: 100%;
 }
 

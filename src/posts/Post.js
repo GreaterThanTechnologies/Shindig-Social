@@ -28,7 +28,7 @@ export default function Post(props) {
             <button 
               className="editPost__button"
               onClick={handleDelete}>
-              Delete List
+              Delete Post
             </button>
           </div>
               <h3>Edit Post</h3><EditPostForm post={post}/>

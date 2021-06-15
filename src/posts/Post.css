@@ -20,11 +20,15 @@
   color: var(--shindig-color);
   font-size: 18px;
   margin-top: 45px;
-  
+  min-width: 800px;
 }
 
 .editPost__box {
   border-bottom: 1px solid var(--shindig-background);
+}
+
+.posts__cdm {
+  min-width: 800px;
 }
 
 
