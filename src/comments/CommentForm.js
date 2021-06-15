@@ -17,8 +17,8 @@ class CommentForm extends React.Component {
     this.setState({content: ""})
   }
 
-  handleChange(e) {
-      this.setState({[e.target.body]: e.target.value})
+  handleChange = (e) => {
+      this.setState({[e.target.name]: e.target.value})
   }
 
 
@@ -33,7 +33,8 @@ class CommentForm extends React.Component {
           className="commentForm__input" 
           type="text" 
           onChange={this.handleChange.bind(this)} 
-          value={this.state.content} name="content"
+          value={this.state.content} 
+          name="content"
           placeholder="Add comment..."
         />
 

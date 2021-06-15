@@ -1,4 +1,5 @@
 export default function addPost(post) {
+  
   return function(dispatch) {
     fetch("http://localhost:3010/posts", {
       method: "POST",

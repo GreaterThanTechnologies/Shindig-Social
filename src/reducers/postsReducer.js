@@ -10,12 +10,13 @@ export default function postsReducer(state = {posts: []}, action) {
         return {posts: editedPostsArray}
       case "FETCH_POSTS":
         return {posts: action.payload}
-      case "ADD_BODY":
-        const updatedPost = state.posts.find(post => post.id === action.payload.postId) // first find list that todo is associated with
-        updatedPost.comments = [...updatedPost.comments, action.payload] // replace todos property on the list
-        return {posts: state.posts.map(post => post.id === updatedPost.id ? updatedPost : post)} //return new state with update list todos
+      case "ADD_COMMENT":
+        const updatedPost = state.posts.find(post => post.id === action.payload.id ? action.payload : post)
+        updatedPost.comments = [...updatedPost.comments, action.payload] 
+        return {posts: state.posts.map(post => post.id === updatedPost.id ? updatedPost : post)} 
       default:
-        return state
+      return state
+
   }
 }
 

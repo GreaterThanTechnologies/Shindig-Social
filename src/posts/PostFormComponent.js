@@ -10,7 +10,8 @@ class PostFormComponent extends React.Component {
     this.props.submitCallback(this.props.post)
   }
 
-  handleChange = (e) => {this.props.updateStateInParent({[e.target.body]: e.target.value})}
+  handleChange = (e) => {
+    this.props.updateStateInParent({[e.target.name]: e.target.value})}
 
   render = () => {
 

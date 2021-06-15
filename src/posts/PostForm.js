@@ -24,7 +24,7 @@ class PostForm extends React.Component {
         this.props.editPosts(this.state)
 
     } else {
-      const post = {body: this.state.body, id: Math.floor(Math.random() * Math.floor(100000000))}
+      const post = {body: this.state.body, id: this.state.post.id}
       this.props.addPost(post) 
       this.props.history.push("/posts")
     }
