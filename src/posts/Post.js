@@ -4,7 +4,6 @@ import deletePost from '../actions/deletePost'
 import CommentForm from '../comments/CommentForm'
 import Comment from '../comments/CommentContainer'
 import "../styles/Post.css"
-import { render } from '@testing-library/react'
 // stateless component #2
 
 export default function Post(props) {

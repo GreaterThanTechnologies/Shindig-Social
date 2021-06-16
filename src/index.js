@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import "./styles/index.css"
 import {BrowserRouter as Router} from 'react-router-dom'
-import {createStore, combineReducers, compose, applyMiddleware} from 'redux'
+import {createStore, compose, applyMiddleware} from 'redux'
 import postsReducer from './reducers/postsReducer'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import {Provider} from 'react-redux'

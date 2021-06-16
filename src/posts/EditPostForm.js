@@ -1,7 +1,5 @@
 import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
-// import {useState} from 'react'
-// import addPost from '../actions/addPost'
 import editPost from '../actions/editPost'
 import PostFormComponent from './PostFormComponent'
 import React from 'react'
