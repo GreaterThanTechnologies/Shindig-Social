@@ -1,6 +1,6 @@
 import PostsContainer from './posts/PostsContainer'
 import SideBar from './sideBar/SideBar'
-import "./App.css"
+import "./styles/App.css"
 // stateless component #7
 
 function App(){
