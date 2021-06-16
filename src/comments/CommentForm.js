@@ -5,6 +5,8 @@ import "./CommentForm.css"
 
 class CommentForm extends React.Component {
 
+// with state
+
   constructor(props) {
     super(props)
     this.state = [{

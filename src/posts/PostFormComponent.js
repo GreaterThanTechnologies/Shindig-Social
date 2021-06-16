@@ -40,3 +40,5 @@ class PostFormComponent extends React.Component {
 }
 
 export default PostFormComponent
+
+// stateless component #3

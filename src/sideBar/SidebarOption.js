@@ -13,3 +13,5 @@ function SidebarOption({ active, text, Icon, src} ) {
   )
 }
 export default SidebarOption
+
+// stateless component #7

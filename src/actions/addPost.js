@@ -8,5 +8,4 @@ export default function addPost(post) {
     }).then(resp => resp.json())
     .then(post => dispatch({type: "ADD_POST", payload: post}))
   }
-
 }

@@ -7,6 +7,5 @@ export default function addComment(content) {
       body: JSON.stringify({comment: content})
     }).then(resp => resp.json())
     .then(content => dispatch({type: "ADD_COMMENT", payload: content}))
-
   }
 }

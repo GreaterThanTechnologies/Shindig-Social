@@ -1,4 +1,5 @@
 export default function fetchPosts() {
+  
   return (dispatch) => {
     fetch("http://localhost:3010/posts")
     .then(function(response) {

@@ -36,3 +36,5 @@ function mapStateToProps(state) {
 
 
 export default connect(mapStateToProps)(Posts)
+
+// stateless component #4

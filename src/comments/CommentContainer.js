@@ -2,7 +2,7 @@ import React from 'react'
 import "./Comment.css"
 
 
-class Comment extends React.Component {
+class CommentContainer extends React.Component {
 
   render() {
     return <div className="comment">
@@ -14,4 +14,7 @@ class Comment extends React.Component {
 
 }
 
-export default Comment
+export default CommentContainer
+
+// presentational component
+// stateless component #1

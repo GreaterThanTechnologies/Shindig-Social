@@ -31,3 +31,5 @@ export default function SideBar(props) {
   )
 
 }
+
+// stateless component #6

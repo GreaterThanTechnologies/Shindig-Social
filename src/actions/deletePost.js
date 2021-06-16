@@ -1,7 +1,6 @@
 export default function deletePost(postId) {
 
   return function(dispatch) {
-
     fetch(`http://localhost:3010/posts/${postId}`, {
       method: "DELETE",
       headers: {Accept: "application/json", "Content-Type": "application/json"},

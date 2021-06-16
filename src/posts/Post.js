@@ -2,7 +2,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import EditPostForm from './EditPostForm'
 import deletePost from '../actions/deletePost'
 import CommentForm from '../comments/CommentForm'
-import Comment from '../comments/Comment'
+import Comment from '../comments/CommentContainer'
 import "./Post.css"
 
 
@@ -38,3 +38,5 @@ export default function Post(props) {
         </>
         )
 }
+
+// stateless component #2

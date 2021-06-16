@@ -8,29 +8,28 @@ import fetchPosts from '../actions/fetchPosts'
 
 class PostsContainer extends Component {
 
-    componentDidMount() {
-        this.props.fetchPosts()
-    }
-
-    render() {
-        return (
-          <div className="posts__cdm">
-            <Switch>
-              <Route path="/posts/new">
-                <NewPostForm className="newPost__form" />
-              </Route>
-              <Route exact path="/posts">
-                <Posts />
-              </Route>
-              <Route path='/posts/:id' render={(props) => <Post {...props}/>}/>
-            </Switch>
-          </div>
-        )
-    }
+  componentDidMount() {
+      this.props.fetchPosts()
+  }
+  render() {
+      return (
+        <div className="posts__cdm">
+          <Switch>
+            <Route path="/posts/new">
+              <NewPostForm className="newPost__form" />
+            </Route>
+            <Route exact path="/posts">
+              <Posts />
+            </Route>
+            <Route path='/posts/:id' render={(props) => <Post {...props}/>}/>
+          </Switch>
+        </div>
+      )
+  }
 
 }
 
 
 export default connect(null, {fetchPosts})(PostsContainer)
 
-
+// stateless component #5

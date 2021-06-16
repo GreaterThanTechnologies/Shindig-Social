@@ -17,3 +17,6 @@ function App(){
 
 
 export default App
+
+
+// stateless component #8
