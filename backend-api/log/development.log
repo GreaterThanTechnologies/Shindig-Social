@@ -7809,3 +7809,39 @@ Processing by PostsController#index as */*
 Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.5ms | Allocations: 3314)
 
 
+Started GET "/posts" for ::1 at 2021-06-16 10:10:28 -0400
+Processing by PostsController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 7.3ms | ActiveRecord: 0.9ms | Allocations: 3906)
+
+
+Started POST "/comments" for ::1 at 2021-06-16 10:10:42 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"0"=>{"content"=>""}, "content"=>"WHAT AM I DOING HERE?", "className"=>"[FILTERED]", "post_id"=>2}}
+[31mUnpermitted parameters: :0, :className[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "WHAT AM I DOING HERE?"], ["post_id", 2], ["created_at", "2021-06-16 14:10:42.301383"], ["updated_at", "2021-06-16 14:10:42.301383"]]
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (19.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 20.6ms | Allocations: 4444)
+
+
+  
+NameError (uninitialized constant TodoSerializer::FastJsonapi):
+  
+app/serializers/comment_serializer.rb:3:in `<class:TodoSerializer>'
+app/serializers/comment_serializer.rb:2:in `<main>'
+app/controllers/comments_controller.rb:6:in `create'
