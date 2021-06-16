@@ -5,8 +5,6 @@ import "./CommentForm.css"
 
 class CommentForm extends React.Component {
 
-// with state
-
   constructor(props) {
     super(props)
     this.state = [{
@@ -22,19 +20,19 @@ class CommentForm extends React.Component {
   }
 
   handleChange = (e) => {
-      this.setState({[e.target.name]: e.target.value, 
-        className: "active"
-      })
+    this.setState({[e.target.name]: e.target.value, 
+      className: "active"
+    })
   }
 
 
   render() {
-
     return (
       <form 
         className="comment__form" 
         onSubmit={this.handleSubmit.bind(this)}
       >
+
         <input 
           className="commentForm__input" 
           type="text" 
@@ -49,9 +47,8 @@ class CommentForm extends React.Component {
           type="submit"
         />
       </form>
-  )
+    )
   }
-
 }
 
 export default connect(null, {addComment})(CommentForm)
