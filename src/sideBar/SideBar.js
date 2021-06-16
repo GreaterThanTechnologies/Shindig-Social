@@ -5,11 +5,13 @@ import shindigWords from '../images/shindigWords.png'
 import PostAddRoundedIcon from '@material-ui/icons/PostAddRounded';
 import SidebarOption from "./SidebarOption"
 import ChatBubbleOutlineRoundedIcon from '@material-ui/icons/ChatBubbleOutlineRounded';
+// stateless component #6
 
 export default function SideBar(props) {
   return (
 
     <div className="sidebar">
+
       <img className="sidebar__logo" src={shindigLogo}
         alt=""
       />
@@ -18,18 +20,14 @@ export default function SideBar(props) {
         <Link to="/posts" style={{textDecoration:"none"}}>
           <SidebarOption Icon={PostAddRoundedIcon} text="Posts" />
         </Link>
-
         <Link to="/posts/new" style={{textDecoration:"none"}}>
           <SidebarOption Icon={ChatBubbleOutlineRoundedIcon} text="New Post" />
         </Link>
-
       </div>
 
       <img className="sidebar__shindigWords" src={shindigWords} alt="" />
 
     </div>
   )
-
 }
 
-// stateless component #6
