@@ -9,21 +9,16 @@ import {composeWithDevTools} from 'redux-devtools-extension'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
 
-
 const initialState = {posts: []}
-
-
-
 const store = createStore(postsReducer, initialState, compose(applyMiddleware(thunk), composeWithDevTools()))
 
-console.log(store)
 ReactDOM.render(
   <Router >
     <Provider store={store}>
-        <App/>
+      <App/>
     </Provider>
-  </Router>
-  ,
+  </Router>,
+
   document.getElementById('root')
-);
+)
 
