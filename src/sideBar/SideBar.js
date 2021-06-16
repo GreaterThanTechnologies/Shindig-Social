@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import "./SideBar.css"
+import "../styles/SideBar.css"
 import shindigLogo from '../images/shindigLogo.png'
 import shindigWords from '../images/shindigWords.png'
 import PostAddRoundedIcon from '@material-ui/icons/PostAddRounded';

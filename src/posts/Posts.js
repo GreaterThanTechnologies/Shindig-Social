@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
-import "./Posts.css"
+import "../styles/Posts.css"
 
 function mapStateToProps(state) {
   return {posts: state.posts}

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./SidebarOption.css"
+import "../styles/SidebarOption.css"
 // stateless component #6
 
 function SidebarOption({ active, text, Icon } ) {

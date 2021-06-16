@@ -1,7 +1,7 @@
 import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 import addPost from '../actions/addPost'
-import "./NewPostForm.css"
+import "../styles/NewPostForm.css"
 
 import PostFormComponent from './PostFormComponent'
 import React from 'react'

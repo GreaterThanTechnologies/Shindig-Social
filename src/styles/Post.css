@@ -1,20 +1,4 @@
-.postForm__component {
-  padding-top: 20px;
-  border-bottom: 1px solid var(--shindig-background);
-  display: flex;
-  align-items: center;
-}
-
-.postForm__component > input {
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  outline-color: var(--shindig-color);
-  margin-bottom: 15px;
-  
-}
-
-.postForm__submit {
+.editPost__button {
   cursor: pointer;
   background-color: var(--shindig-color) !important;
   border: none !important;
@@ -31,15 +15,19 @@
   font-size: 20px !important;
 }
 
-.postForm__input {
-  display: flex;
-  width: auto;
-  flex: 1;
-  color: gray;
+.posts__cdm > h3 {
+  color: var(--shindig-color);
+  font-size: 18px;
+  margin-top: 45px;
+  min-width: 800px;
 }
 
-.postForm__input > input {
-  flex: 1;
-  width: 100%;
+.editPost__box {
+  border-bottom: 1px solid var(--shindig-background);
 }
+
+.posts__cdm {
+  min-width: 800px;
+}
+
 

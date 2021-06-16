@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Comment.css"
+import "../styles/Comment.css"
 
 // presentational component
 // stateless component #1
