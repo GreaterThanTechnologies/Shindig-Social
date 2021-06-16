@@ -9,7 +9,6 @@ class PostForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {body: (this.props.post ? this.props.post.body : ""), id:  (this.props.post ? this.props.post.id : "")}
-
   }
 
   componentDidUpdate(prevProps) { 
@@ -20,6 +19,7 @@ class PostForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault()
+
     if (this.props.post) {
         this.props.editPosts(this.state)
 
@@ -28,12 +28,9 @@ class PostForm extends React.Component {
       this.props.addPost(post) 
       this.props.history.push("/posts")
     }
-
-
   }
 
   handleChange = (e) => {this.setState({[e.target.body]: e.target.value})}
-
 
   render = () => {
 
@@ -41,11 +38,10 @@ class PostForm extends React.Component {
       <div className="post__form">
         <form onSubmit={this.handleSubmit.bind(this)}>
           <input type="text" onChange={this.handleChange} value={this.state.body} name="body"/>
-      
           <input className="postForm__inputSubmit" type="submit"/>
         </form>
       </div>
-  ) 
+    ) 
   }
 
 }

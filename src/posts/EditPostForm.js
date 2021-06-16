@@ -26,8 +26,6 @@ class EditPostForm extends React.Component {
       <PostFormComponent submitCallback={this.props.editPost} post={this.state} updateStateInParent={this.handleChange.bind(this)}/>
     )
   }
-
-
 }
 
 export default withRouter(connect(null, {editPost})(EditPostForm))

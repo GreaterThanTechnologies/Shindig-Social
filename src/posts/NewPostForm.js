@@ -1,6 +1,5 @@
 import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
-// import {useState} from 'react'
 import addPost from '../actions/addPost'
 import "./NewPostForm.css"
 
@@ -19,7 +18,6 @@ class NewPostForm extends React.Component {
     this.props.history.push('/posts')
   }
 
-
   handleChange = (post) => {this.setState({...this.state, ...post})}
 
   render() {
@@ -31,8 +29,6 @@ class NewPostForm extends React.Component {
       />
     )
   }
-
-
 }
 
 export default withRouter(connect(null, {addPost})(NewPostForm))

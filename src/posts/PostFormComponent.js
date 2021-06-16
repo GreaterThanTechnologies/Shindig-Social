@@ -1,9 +1,7 @@
 import React from 'react'
-
-
+// stateless component #3
 
 class PostFormComponent extends React.Component {
-
 
   handleSubmit(e) {
     e.preventDefault()
@@ -14,8 +12,8 @@ class PostFormComponent extends React.Component {
     this.props.updateStateInParent({[e.target.name]: e.target.value})}
 
   render = () => {
-
     return (
+
       <form 
         className="postForm__component" 
         onSubmit={this.handleSubmit.bind(this)}>
@@ -34,11 +32,9 @@ class PostFormComponent extends React.Component {
           type="submit" 
         />
       </form>
-  )
+    )
   }
-
 }
 
 export default PostFormComponent
 
-// stateless component #3
