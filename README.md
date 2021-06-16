@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 
+
 ### `rails api backend`
 
 The backend database is provided in sqlite and built by running 'rails new backend-api --api' 
