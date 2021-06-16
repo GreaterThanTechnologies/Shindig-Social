@@ -1,22 +1,17 @@
 import PostsContainer from './posts/PostsContainer'
 import SideBar from './sideBar/SideBar'
 import "./App.css"
+// stateless component #7
 
 function App(){
   return (
+
     //BEM naming convention
-        <div className="app">
-          <SideBar />
-          <PostsContainer />
-        </div>
-      )
+    <div className="app">
+      <SideBar />
+      <PostsContainer />
+    </div>
+  )
 }
 
-
-
-
-
 export default App
-
-
-// stateless component #8
