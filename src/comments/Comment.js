@@ -1,21 +1,20 @@
 import React from 'react'
 import "../styles/Comment.css"
 
-// presentational component
-// stateless component #1
 
-class CommentContainer extends React.Component {
+class Comment extends React.Component {
 
   render() {
-
     return <div className="comment">
         <div className="commentLi__div">
           <li className="comment__li">{this.props.body.content}</li>
         </div>
       </div>
-      
   }
+
 }
 
-export default CommentContainer
+export default Comment
 
+// presentational component
+// stateless component

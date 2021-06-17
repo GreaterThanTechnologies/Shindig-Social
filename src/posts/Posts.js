@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react'
+import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import "../styles/Posts.css"
@@ -17,7 +17,7 @@ class Posts extends Component {
         </div>
         <div className="posts__body" >
           <ul>
-            {this.props.posts && this.props.posts.map((post, i) => <li 
+            {this.props.posts && this.props.posts.map((post) => <li 
               className="postBody__li" 
               key={post.id}>
                 <Link to={`/posts/${post.id}`} 

@@ -5,9 +5,13 @@ import shindigWords from '../images/shindigWords.png'
 import PostAddRoundedIcon from '@material-ui/icons/PostAddRounded';
 import SidebarOption from "./SidebarOption"
 import ChatBubbleOutlineRoundedIcon from '@material-ui/icons/ChatBubbleOutlineRounded';
-// stateless component #6
+// import {useState} from 'react'
 
 export default function SideBar(props) {
+  // const [active, setActive] = useState(false)
+
+  //add onClick on SideBarOption and make action to toggle between active and not
+
   return (
 
     <div className="sidebar">
@@ -18,14 +22,14 @@ export default function SideBar(props) {
 
       <div className="sidebar__links">
         <Link to="/posts" style={{textDecoration:"none"}}>
-          <SidebarOption Icon={PostAddRoundedIcon} text="Posts" />
+          <SidebarOption  Icon={PostAddRoundedIcon} text="Posts" />
         </Link>
         <Link to="/posts/new" style={{textDecoration:"none"}}>
           <SidebarOption Icon={ChatBubbleOutlineRoundedIcon} text="New Post" />
         </Link>
       </div>
 
-      <img className="sidebar__shindigWords" src={shindigWords} alt="" />
+      <img className="sidebar__shindigWords" src={shindigWords} alt="Shindig logo words" />
 
     </div>
   )

@@ -5,8 +5,8 @@ class CommentsController < ApplicationController
     if comment.save
       render json: CommentSerializer.new(comment)
     else
-        render json: {message: comment.errors.full_messages}
-      end
+      render json: {message: comment.errors.full_messages}
+    end
   end
 
   ####

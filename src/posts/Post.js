@@ -2,9 +2,9 @@ import {useSelector, useDispatch} from 'react-redux'
 import EditPostForm from './EditPostForm'
 import deletePost from '../actions/deletePost'
 import CommentForm from '../comments/CommentForm'
-import Comment from '../comments/CommentContainer'
+import Comment from '../comments/Comment'
 import "../styles/Post.css"
-// stateless component #2
+
 
 export default function Post(props) {
 
@@ -17,9 +17,6 @@ export default function Post(props) {
     dispatch(deletePost(post.id))
     props.history.push("/posts")
   }
-
-  //render is not present, but when added, presents syntax error, missing semicolon
-  // render() {
     return(
       <>
         <h1>
@@ -40,5 +37,5 @@ export default function Post(props) {
           />)}
       </>
     )
-  // }
+  
 }
