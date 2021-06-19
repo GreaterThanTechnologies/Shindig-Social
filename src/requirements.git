@@ -1,0 +1,24 @@
+REQUIRED ASPECTS OF THE PROJECTS AND THEIR LOCATIONS WITHIN THE application
+
+2 CONTAINER COMPONENTS 
+  PostsContainer.js 
+  Comment.js
+
+5 STATELESS COMPONENTS 
+  Comment.js 
+  Post.js
+  PostFormComponent.js 
+  Posts.js 
+  PostContainer.js 
+  PostReducer.js 
+  SideBar.js 
+  SidebarOption.js 
+  App.js 
+  Index.js
+
+3 ROUTES 
+  /posts
+  /posts/new
+  /posts/:id
+
+

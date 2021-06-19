@@ -147,3 +147,15 @@ its current condition and add the comment to the existing state condition.
 
 The entire reason for the images folder is to house the images used for the sidebar
 and display those images when imported and called upon within a component.
+
+in regards to the Rails APi backend, the sole purpose of this is to handle the data
+within the database. The db has nothing to do with the state and the state has nothing to 
+do with the db. 
+
+The controllers within the rails backend control the deletion, editing and adding of
+posts and the adding of comments to a post respectfully. The rails api backend
+is what the fetch function of the frontend is accessing when called. There is a serializer
+as well to group the associated comments with the post in which it was made. 
+
+the return of the controllers to the JS frontend is given in a JSON object that needs
+to be converted to a JS object inwhich it does. 
