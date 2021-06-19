@@ -8,10 +8,10 @@ function App(){
 
     //BEM naming convention
     <div className="app">
+
       <SideBar />
       <PostsContainer />
     </div>
   )
 }
-
 export default App

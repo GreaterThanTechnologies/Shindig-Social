@@ -1,0 +1,149 @@
+npm start starts the application, this opens the Index.js file, imports the
+App.js file,  and renders the results from App.js file in the html id of 
+root in the index.html file. 
+
+because of the body in the index.html file has only the id of root, this is the
+only thing that is rendered from that html file with the only exception being the
+title of the page which is shown in the browser window tab. "Basic Twitter© Clone"
+is what will display because it is wrapped within the title tag in the html file.
+
+index wraps the provider, aka store, and the App in router making accessible 
+to both the routing of links to different views within the application and the store 
+also available throughout the entire application. 
+
+ReactDOM.render(
+  <Router >
+    <Provider store={store}>
+      <App/>
+    </Provider>
+  </Router>,
+
+  document.getElementById('root')
+)
+
+App renders the views of sidebar and postContainer. 
+
+Within the SideBar, the logo is rendered through way of calling img and declaring
+the source of shindigLogo. This is imported by the relative route from within
+the images folder. ALos accomplished this way is the shindig words "logo"
+shown at the bottom of the sidebar under the links explained below
+
+SideBar renders the links for Posts as well as New Posts. Within the sidebar,
+the link to sets the routes to "./posts/new" as well as "./posts" respectfully.
+What this does is to say that, that if the user physically types those
+routes into the address bar, or is directed to them by way of these links,
+that the SidebarOption is called. The actual display of these components is 
+rendered indirectly by the PostsContainer.js file explained below.
+
+this SideBar.js file imports, in addition to the images and link icons, {link} 
+from react-router-dom that allows and sets forth the ability to easily and
+quickly add links to other "pages" within the application. All actions within this page
+call on SidebarOption.js by way of importing from the relative path for the ability 
+to set the link to direct the browser to display other components, in this
+case, the "new Post" as well as the "posts" in general. 
+
+IN the SidebarOption.js page, we are being past the props of active, text, Icon.
+and displaying those item s of Icon, which is a function, thus the capital letter I
+and the text that is given within the SideBar.js file. 
+
+Currently the active feature is not working and thus does not display. 
+
+Within the postContainer file, is a stateless component that renders the particular
+component called upon from the sidebar.js links. This is also where the routes
+are specifically set. example that the link to "/posts.new" will display the
+NewPostForm component within the newpostform file. The same situation will results
+from the other routes, /posts and /posts:id. These 3 routes meet the requirement
+for 3 individual routes within the project. 
+
+The 3 routes are:
+  /posts/new
+  /posts
+  /posts/:id
+
+The Postscontainer is also responsible for calling on fetchPosts for posts display
+within the browser in the componentDidMount function that calls on the function of
+fetchPosts that is being imported from the actions folder /actions/fetchPosts
+this file is also a stateless component file, 1 of the required 5 stateless components. 
+
+THe routes that are declared here call on the NewPostForm, Posts & post .js
+files respectfully. 
+
+NewPostForm.js is responsible for adding a new post to the page. It sets state as
+body of an empty string. this file handles the submit action as well as the handleChange
+and returns the POstFormComponent that will be described below. 
+
+Within the PostFormComponent is the form itself. has a form tag and within that tag is
+the input of the post and also includes the button for submitting the new post. 
+also important to note is that ALL forms within this application have a e.preventDefault
+which stops the default action of refreshing the page. This is included within this
+page as well. 
+
+Posts.js file is responsible for rendering the the posts. This is accomplished
+by iterating through the state by use of map, which returns a new form of the object
+in which it is called on. example is returning an array from an array or a string from a string
+
+this also sets a link for each element within the object for each post that calls on 
+the Post.js file through the posts/:id link to display that post individually
+that also allows for some CRUD options of delete, edit as well as allow for a comment 
+to be added to the post when this .js file is rendered. 
+
+There are minor inline styling to remove the LI bullet from the list of posts as well. 
+The function of mapStateToProps(state) is declared in this file as well that returns
+posts as state.posts. 
+
+THe Post.js file is responsible for the rendering of the entire page of a single post. 
+This includes the options for delete, edit and the addition of comments. 
+
+This post.js file handles the delete action too. Within this rendered route, is the
+calling of other components. EditPostForm, CommentForm and the display of all the comments
+associated within that post displayed within. 
+
+the constants declared within this file are are used for displaying the post, as well as
+referencing the state for display. 
+
+EditPostForm is the form in which one can edit a singular post. This is a component 
+that is a stateful component. The entire file is set to do a single action, which
+is to edit a single post from within itself. example would be to change a post from 
+"This is a post" to "This is a post that is edited" This also updates the state 
+for immediate display of changed post.
+
+The CommentForm.js file is a larger file that is responsible for the adding of a new
+comment for a specific post. This is a statefull component. Again this component
+prevents the default action of refreshing the page after a form submission. The state 
+is update through the submit handling action/function. Of course with all of the
+components, the file exported to be accessed from within another file. 
+
+The Comment.js file is a simple component file that is stateless and is strictly
+in existence for presenting data to the user, thus being a presentational Component
+accessing the state by way of this.props.body.content for displaying of the comments
+for that specific post body. 
+
+As far as the non direct rendering files, there are a few such as the postsReducer.js file
+that is responsible for the actual actions that access the state for the displaying 
+of the state to the user. The actions are as follows:
+
+  ADD_POST
+  DELETE_POST
+  EDIT_POST
+  FETCH_POSTS
+  ADD_COMMENT
+
+in response to the add_post reducer, the calling of this will take the state in its
+current condition, and add the new post to this state allowing for all posts to 
+exist within the state. 
+
+in response to the delete_post reducer, the calling of this will take the state in its
+current condition, find the particular post by id, then remove the post from the state. 
+
+in response to the edit_post reducer, the calling of this will take the state in
+its current condition, find the post that is being edited by id, and change that post's
+condition and change the state that was to be the new edited state for that post. 
+
+in response to the fetch_posts, the calling of this reducer  calls on the action of the
+fetch function that makes an API call to the ad that is controlled by Rails API
+
+in response to the add_comment reducer, the calling of this will take the state in
+its current condition and add the comment to the existing state condition. 
+
+The entire reason for the images folder is to house the images used for the sidebar
+and display those images when imported and called upon within a component.

@@ -5,13 +5,9 @@ import shindigWords from '../images/shindigWords.png'
 import PostAddRoundedIcon from '@material-ui/icons/PostAddRounded';
 import SidebarOption from "./SidebarOption"
 import ChatBubbleOutlineRoundedIcon from '@material-ui/icons/ChatBubbleOutlineRounded';
-// import {useState} from 'react'
 
 export default function SideBar(props) {
-  // const [active, setActive] = useState(false)
-
-  //add onClick on SideBarOption and make action to toggle between active and not
-
+ 
   return (
 
     <div className="sidebar">

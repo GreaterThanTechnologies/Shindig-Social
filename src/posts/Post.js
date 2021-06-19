@@ -4,7 +4,7 @@ import deletePost from '../actions/deletePost'
 import CommentForm from '../comments/CommentForm'
 import Comment from '../comments/Comment'
 import "../styles/Post.css"
-
+// stateless component
 
 export default function Post(props) {
 
