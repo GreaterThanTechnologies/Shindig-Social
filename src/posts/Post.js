@@ -10,6 +10,7 @@ export default function Post(props) {
 
   const posts = useSelector(function(state) {return state.posts});
   const post = posts.find(post => post.id === parseInt(props.match.params.id))
+  console.log("Hello from Post.js")
 
   const dispatch = useDispatch()
 
@@ -18,6 +19,7 @@ export default function Post(props) {
     props.history.push("/posts")
   }
     return(
+      
       <>
         <h1>
           {post && post.body}

@@ -10,6 +10,8 @@ function mapStateToProps(state) {
 class Posts extends Component {
 
   render() {
+    console.log("Hello from Posts.js")
+
     return (
       <div className="posts">
         <div className="posts__header">

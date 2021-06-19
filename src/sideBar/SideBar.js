@@ -7,7 +7,8 @@ import SidebarOption from "./SidebarOption"
 import ChatBubbleOutlineRoundedIcon from '@material-ui/icons/ChatBubbleOutlineRounded';
 
 export default function SideBar(props) {
- 
+  console.log("Hello from SideBar.js")
+
   return (
 
     <div className="sidebar">
@@ -28,6 +29,8 @@ export default function SideBar(props) {
       <img className="sidebar__shindigWords" src={shindigWords} alt="Shindig logo words" />
 
     </div>
+    
   )
+  
 }
 

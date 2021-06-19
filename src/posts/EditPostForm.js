@@ -14,7 +14,8 @@ class EditPostForm extends React.Component {
   componentDidUpdate(prevProps) {
     if (prevProps.post === undefined) {
       this.setState({...this.props.post})
-    }
+    }  console.log("Hello from EditPostForm.js")
+
   }
 
   handleChange = (post) => {this.setState({...this.state, ...post})}

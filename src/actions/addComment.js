@@ -7,9 +7,11 @@ export default function addComment(content) {
       body: JSON.stringify({comment: content})
     }).then(resp => resp.json())
       .then(content => {
-        console.log(content)
       dispatch({type: "ADD_COMMENT", payload: content}
     
   )})
+  console.log("Hello from addComment.js")
+
   }
 }
+

@@ -21,6 +21,8 @@ class NewPostForm extends React.Component {
   handleChange = (post) => {this.setState({...this.state, ...post})}
 
   render() {
+    console.log("Hello from NewPostForm.js")
+
     return (
       <PostFormComponent 
         submitCallback={this.handleSubmit.bind(this)}

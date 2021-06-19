@@ -11,6 +11,7 @@ import thunk from 'redux-thunk'
 
 const initialState = {posts: []}
 const store = createStore(postsReducer, initialState, compose(applyMiddleware(thunk), composeWithDevTools()))
+console.log("Hello from Index.js")
 
 ReactDOM.render(
   <Router >

@@ -7,6 +7,8 @@ export default function fetchPosts() {
     })
     .then((postsArray) => {
       dispatch({type: "FETCH_POSTS", payload: postsArray})
+      console.log("Hello from fetch_post function")
+
     })
   }
 }

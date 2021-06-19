@@ -8,5 +8,6 @@ export default function deletePost(postId) {
     .then(post => {
       dispatch({type: "DELETE_POST", payload: post.id})}
       )
+      console.log("Hello deletePost.js")
   }
 }

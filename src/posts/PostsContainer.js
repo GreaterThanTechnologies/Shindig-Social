@@ -15,6 +15,8 @@ class PostsContainer extends Component {
   }
 
   render() {
+    console.log("Hello from PostsContainer.js")
+
     return (
       <div className="posts__cdm">
         <Switch>

@@ -7,5 +7,8 @@ export default function editPost(post) {
       body: JSON.stringify({post: post})
     }).then(resp => resp.json())
     .then(post => dispatch({type: "EDIT_POST", payload: post}))
+    console.log("Hello from editPost.js")
+
   }
+  
 }

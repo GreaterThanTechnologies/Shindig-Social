@@ -14,11 +14,13 @@ class PostForm extends React.Component {
   componentDidUpdate(prevProps) { 
     if (prevProps.post === undefined) {
       this.setState({...this.props.post})
-    }
+    }  
+
   }
 
   handleSubmit(e) {
     e.preventDefault()
+    console.log("Hello")
 
     if (this.props.post) {
         this.props.editPosts(this.state)
@@ -42,7 +44,9 @@ class PostForm extends React.Component {
         </form>
       </div>
     ) 
-  }
+  }  
+ 
+
 
 }
 

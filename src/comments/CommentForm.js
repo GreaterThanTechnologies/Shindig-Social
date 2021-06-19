@@ -8,6 +8,8 @@ class CommentForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {content: ""}
+    console.log("Hello from CommentForm.js")
+
   }
 
   handleSubmit(e) {
@@ -33,6 +35,7 @@ class CommentForm extends React.Component {
       >
 
         <input 
+        
           className="commentForm__input" 
           type="text" 
           onChange={this.handleChange.bind(this)} 
