@@ -5,10 +5,9 @@ export default function addComment(content) {
       method: "POST",
       headers: {Accept: "application/json", "Content-Type": "application/json"},
       body: JSON.stringify({comment: content})
-    }).then(console.log(content))
-    .then(resp => resp.json())
-    .then(content => {
-      
+    }).then(resp => resp.json())
+      .then(content => {
+        console.log(content)
       dispatch({type: "ADD_COMMENT", payload: content}
     
   )})

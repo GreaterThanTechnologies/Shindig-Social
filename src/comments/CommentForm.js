@@ -7,16 +7,17 @@ class CommentForm extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {
-      content: ""}
-    
+    this.state = {content: ""}
   }
 
   handleSubmit(e) {
     e.preventDefault()
     const comment = {...this.state, post_id: this.props.post.id}
     this.props.addComment(comment)
-    this.setState({content: ""})
+    this.setState({content: this.state.content})
+    this.setState({
+      content: ''
+    });
   }
 
   handleChange = (e) => {
