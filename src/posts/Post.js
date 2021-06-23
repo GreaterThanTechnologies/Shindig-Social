@@ -4,6 +4,7 @@ import deletePost from '../actions/deletePost'
 import CommentForm from '../comments/CommentForm'
 import Comment from '../comments/Comment'
 import "../styles/Post.css"
+import React from 'react'
 // stateless component
 
 export default function Post(props) {
@@ -18,29 +19,35 @@ export default function Post(props) {
     dispatch(deletePost(post.id))
     props.history.push("/posts")
   }
-    return(
-      
-      <>
-        <h1>
-          {post && post.body}
-        </h1>
-        <div className="editPost__box">
-          <button
-            className="editDelete__button"
-            onClick={handleDelete}
-          >
-            Delete Post
-          </button>
-        </div>
-          <h3>Edit Post</h3><EditPostForm post={post} />
-          <h3>Add Comment</h3><CommentForm post={post} />
-          <h3>All Comments</h3>
-          {post && post.comments.map(
-            comment => <Comment 
-            key={comment.id} 
-            body={comment}
-           />)}
-      </> 
-    )
+
+  return(
+    
+    <div>
+      <h1>
+        {post && post.body}
+      </h1>
+      <div className="editPost__box">
+        <button
+          className="editDelete__button"
+          onClick={handleDelete}>
+          Delete Post
+        </button>
+      </div>
+      <div className="options__post">
+        <h3>Edit Post</h3><EditPostForm post={post} />
+        <h3>Add Comment</h3><CommentForm post={post} />
+        <h3>All Comments</h3>
+        {post && post.comments.map(
+          comment => <Comment 
+          key={post.id} 
+          body={comment}
+         />
+        )}
+      </div>
+    </div>
+     
+  )
   
 }
+
+   
