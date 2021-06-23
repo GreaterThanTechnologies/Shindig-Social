@@ -7,7 +7,7 @@ export default function addPost(post) {
       body: JSON.stringify({post: post})
     }).then(resp => resp.json())
     .then(post => dispatch({type: "ADD_POST", payload: post}))
-    console.log("Hello")
+    console.log("Hello from addPost.js")
 
   }
 

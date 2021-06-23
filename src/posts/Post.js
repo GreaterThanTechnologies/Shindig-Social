@@ -28,16 +28,19 @@ export default function Post(props) {
           <button
             className="editDelete__button"
             onClick={handleDelete}
-            >
+          >
             Delete Post
-            </button>
+          </button>
         </div>
           <h3>Edit Post</h3><EditPostForm post={post} />
           <h3>Add Comment</h3><CommentForm post={post} />
           <h3>All Comments</h3>
-          {post && post.comments.map(comment => <Comment key={comment.id} body={comment}
-          />)}
-      </>
+          {post && post.comments.map(
+            comment => <Comment 
+            key={comment.id} 
+            body={comment}
+           />)}
+      </> 
     )
   
 }

@@ -5,7 +5,7 @@ import NewPostForm from './NewPostForm'
 import {Route, Switch} from 'react-router-dom'
 import {connect} from 'react-redux'
 import fetchPosts from '../actions/fetchPosts'
-// stateless component #4
+// stateless component #4, acces to state through Redux connect
 // 3 routes
 
 class PostsContainer extends Component {

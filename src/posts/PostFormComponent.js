@@ -12,7 +12,6 @@ class PostFormComponent extends React.Component {
     this.props.updateStateInParent({[e.target.name]: e.target.value})}
 
   render = () => {
-    console.log("Hello from PostFormComponent.js")
 
     return (
 
@@ -36,7 +35,8 @@ class PostFormComponent extends React.Component {
       </form>
     )
   }
-}
+}    console.log("Hello from PostFormComponent.js")
+
 
 export default PostFormComponent
 
