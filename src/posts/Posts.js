@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import "../styles/Posts.css"
 
 function mapStateToProps(state) {
+  console.log("Hello from mapStateToProps")
   return {posts: state.posts}
 }
 

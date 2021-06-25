@@ -18,16 +18,19 @@ class PostForm extends React.Component {
   }
 
   handleSubmit(e) {
+    console.log("Top of handleSubmit")
     e.preventDefault()
     
     if (this.props.post) {
         this.props.editPosts(this.state)
-        console.log("Hello from PostForm.js")
+        console.log("Hello from 'if' PostForm.js")
     } else {
+      console.log("Before addPost")
       const post = {body: this.state.body, id: this.state.post.id}
       this.props.addPost(post) 
+      console.log("After addPost")
       this.props.history.push("/posts")
-      console.log("Hello from PostForm.js")
+      console.log("Hello from 'else' PostForm.js")
     }
   }
   handleChange = (e) => {this.setState({[e.target.body]: e.target.value})}
@@ -48,4 +51,4 @@ class PostForm extends React.Component {
 
 }
 
-export default withRouter(connect(null, {addPost: addPost, editPost: editPost})(PostForm))
+export default withRouter(connect(null, {addPost: addPost, editPost: editPost })(PostForm))

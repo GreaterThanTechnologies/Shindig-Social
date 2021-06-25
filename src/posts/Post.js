@@ -21,12 +21,13 @@ export default function Post(props) {
   }
 
   return(
-    
-    <div>
+   
+    <>
       <h1>
         {post && post.body}
       </h1>
       <div className="editPost__box">
+        
         <button
           className="editDelete__button"
           onClick={handleDelete}>
@@ -39,12 +40,14 @@ export default function Post(props) {
         <h3>All Comments</h3>
         {post && post.comments.map(
           comment => <Comment 
-          key={post.id} 
+          key={comment.id} 
           body={comment}
          />
         )}
-      </div>
-    </div>
+      </div>          
+
+      
+    </>
      
   )
   

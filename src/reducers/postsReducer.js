@@ -1,4 +1,5 @@
 export default function postsReducer(state = {posts: []}, action) {
+  console.log("Beginning of Reducer")
   switch (action.type) {
     case "ADD_POST":
       console.log("Hello from ADD_POST")
