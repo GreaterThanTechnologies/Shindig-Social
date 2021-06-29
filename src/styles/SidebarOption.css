@@ -23,7 +23,7 @@
   color: var(--shindig-color);
 }
 
-.sidebarOption--active {
+.sidebarOption__active {
   color: var(--shindig-color);
 }
 
@@ -35,7 +35,7 @@
   color: var(--shindig-color);
 }
 
-.sidebarOption--active > h2 {
+.sidebarOption__active > h2 {
   font-weight: 800;
   font-size: 20px;
 }

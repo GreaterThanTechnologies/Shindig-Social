@@ -5,6 +5,7 @@ import shindigWords from '../images/shindigWords.png'
 import PostAddRoundedIcon from '@material-ui/icons/PostAddRounded';
 import SidebarOption from "./SidebarOption"
 import ChatBubbleOutlineRoundedIcon from '@material-ui/icons/ChatBubbleOutlineRounded';
+import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
 
 export default function SideBar(props) {
   console.log("Hello from SideBar.js")
@@ -16,6 +17,10 @@ export default function SideBar(props) {
       <img className="sidebar__logo" src={shindigLogo}
         alt=""
       />
+
+<img className="like__button" src={ThumbUpAltRoundedIcon}
+                  alt=""
+                />
 
       <div className="sidebar__links">
         <Link to="/posts" style={{textDecoration:"none"}}>
