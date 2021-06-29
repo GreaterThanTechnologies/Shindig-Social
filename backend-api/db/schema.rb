@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_07_200601) do
+ActiveRecord::Schema.define(version: 2021_06_29_193235) do
 
   create_table "comments", force: :cascade do |t|
     t.string "content"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_06_07_200601) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "body"
+    t.integer "likes"
   end
 
   add_foreign_key "comments", "posts"

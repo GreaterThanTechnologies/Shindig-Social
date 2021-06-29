@@ -28,14 +28,6 @@ class Posts extends Component {
     })
     console.log(this.state.likes)
   }
-
-  
-  incrementMe = () => {
-    let newCount = this.state.count + 1
-    this.setState({
-      count: newCount
-    })
-  }
   
 
   render() {
