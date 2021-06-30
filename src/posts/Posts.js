@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import "../styles/Posts.css"
-import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
 
 
 function mapStateToProps(state) {
@@ -13,12 +12,7 @@ function mapStateToProps(state) {
 
 class Posts extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      likes: 0
-    }
-  }
+
 
   handleClick = (e) => {
     console.log("clicked like button")
@@ -49,16 +43,7 @@ class Posts extends Component {
                 {post.body}                                
                 </Link> 
 
-                <div className="likeButton_container">                  
-                    <div className="like__button">
-                      <button>
-                        <ThumbUpAltRoundedIcon 
-                          onClick={this.handleClick}
-
-                          /><p>Likes: {this.state.likes}</p>
-                      </button>
-                    </div>  
-                </div> 
+               
 
 
 
