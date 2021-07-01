@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import "../styles/Posts.css"
-
+import { TransferWithinAStation } from '@material-ui/icons'
+import LikeButton from "./LikeButton"
 
 function mapStateToProps(state) {
   console.log("Hello from mapStateToProps")
@@ -13,16 +14,6 @@ function mapStateToProps(state) {
 class Posts extends Component {
 
 
-
-  handleClick = (e) => {
-    console.log("clicked like button")
-    const newLikeCount = this.state.likes + 1
-    this.setState({
-      likes: newLikeCount
-    })
-    console.log(this.state.likes)
-  }
-  
 
   render() {
     console.log("Hello from Posts.js")
@@ -42,9 +33,9 @@ class Posts extends Component {
                 >
                 {post.body}                                
                 </Link> 
-
-               
-
+              {/* <div className="likeButton__container"> */}
+                <LikeButton />
+              {/* </div> */}
 
 
                 </li>                 

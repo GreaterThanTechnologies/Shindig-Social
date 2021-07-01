@@ -5,6 +5,7 @@ import CommentForm from '../comments/CommentForm'
 import Comment from '../comments/Comment'
 import "../styles/Post.css"
 import React from 'react'
+import LikeButton from './LikeButton'
 // stateless component
 
 export default function Post(props) {
@@ -25,6 +26,7 @@ export default function Post(props) {
     <>
       <h1>
         {post && post.body}
+        <LikeButton />
       </h1>
       <div className="editPost__box">
         
